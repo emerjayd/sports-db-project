@@ -51,7 +51,7 @@ def main():
             delete_data(cursor)
             conn.commit()
         elif choice == '3':
-            csv_file_path = 'players.csv'  # Update with the correct path
+            csv_file_path = 'players.csv'
             insert_data_from_csv(cursor, csv_file_path)
             conn.commit()
             print("Database populated with data from CSV.")
